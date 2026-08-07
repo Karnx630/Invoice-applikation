@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoicer Pro - K. L. Mistry</title>
+    <title>Invoicer Pro - Kanaram. L. Mistry</title>
     
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -38,8 +38,10 @@
             display: none; color: #000; border: 2px solid #000; box-sizing: border-box;
         }
         .inv-content { padding: 30px; }
-        .top-corners-row { display: flex; justify-content: center; align-items: flex-start; }
-        .religious-header { text-align: center; font-weight: bold; font-size: 22px; color: #d32f2f; }
+        
+        /* Layout for top section to keep centered text balanced */
+        .top-corners-row { display: flex; justify-content: space-between; align-items: flex-start; }
+        .religious-header { text-align: center; font-weight: bold; font-size: 22px; color: #d32f2f; flex-grow: 1; }
         
         /* Updated Name and Subtitle styling to match the image */
         .main-name { text-align: center; color: #2a7cbd; font-size: 48px; font-weight: 900; margin-top: 15px; font-family: 'Arial Black', Impact, sans-serif; letter-spacing: 1px; text-transform: uppercase; }
@@ -105,11 +107,13 @@
 <div id="invoice">
     <div class="inv-content">
         <div class="top-corners-row">
+            <div style="font-weight:bold; font-size: 14px; width: 150px;">PAN: AIKPM0017H</div>
             <div class="religious-header">।। श्री गणेशाय नम ।।</div>
+            <div style="width: 150px;"></div> <!-- Balances out the PAN so header stays centered -->
         </div>
         
         <div class="main-name">K. L. MISTRY</div>
-        <div class="sub-name">FURNITURE CONTRACTOR</div>
+        <div class="sub-name">OFFICE - SHOP - HOUSE &<br>ALL TYPE OF FURNITURE CONTRACTOR</div>
         <div class="address-text">C-1006 Laxmi niwas, near akruti township, Narol, Ahmedabad, 382405</div>
         
         <div class="details-row">
