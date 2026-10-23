@@ -62,7 +62,7 @@
             text-align: center; 
         }
 
-        /* Repository Image Signature placed directly on top of signature line */
+        /* Repository Image Signature with mix-blend-mode to hide white background */
         .signature-img { 
             max-height: 75px; 
             width: auto; 
@@ -72,6 +72,7 @@
             transform: translateX(-50%);
             z-index: 2;
             pointer-events: none;
+            mix-blend-mode: multiply; /* This removes the white background visually */
         }
 
         .sig-box { 
