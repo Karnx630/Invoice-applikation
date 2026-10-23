@@ -9,6 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#1a73e8">
     <link rel="manifest" href="./manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 
     <style>
         :root { --primary: #1a73e8; --secondary: #003366; --danger: #dc3545; --success: #28a745; }
@@ -54,8 +55,9 @@
         .out-table td:nth-child(2) { text-align: left; }
         .footer-amount { font-weight: bold; font-size: 18px; text-align: right; }
 
-        .signature-section { margin-top: 80px; display: flex; justify-content: flex-end; }
+        .signature-section { margin-top: 40px; display: flex; justify-content: flex-end; }
         .sig-box { text-align: center; width: 220px; border-top: 2px solid #000; padding-top: 5px; font-weight: bold; }
+        .signature-img { font-family: 'Caveat', cursive; font-size: 32px; color: #001f3f; margin-bottom: -10px; display: block; }
 
         @media print {
             @page { size: A4; margin: 0; }
@@ -135,7 +137,12 @@
             </tfoot>
         </table>
 
-        <div class="signature-section"><div class="sig-box">Signature of Contractor</div></div>
+        <div class="signature-section">
+            <div class="sig-box">
+                <span class="signature-img">Kanaram L. Mistry</span>
+                Signature of Contractor
+            </div>
+        </div>
     </div>
 </div>
 
